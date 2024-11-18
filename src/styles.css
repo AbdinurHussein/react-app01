@@ -1,0 +1,71 @@
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.X {
+  color: red;
+}
+      
+.O {
+  color: blue;
+}
+
+#game-grid {
+  font: 85px arial, sans-serif;
+  margin: 20px auto; /* Center the grid horizontally */
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+#game-grid > button {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  font-size: 24px; /* Adjust font size for better visibility */
+  font-family: inherit;
+  background-color: #fff; /* Add a background for buttons */
+  border: 2px solid #000; /* Add visible borders */
+  cursor: pointer; /* Change cursor to pointer */
+  width: 100px; /* Ensure buttons match grid size */
+  height: 100px; /* Ensure buttons match grid size */
+  outline: none;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and borders in width/height */
+}
+
+#game-grid > button:focus {
+  outline: none;
+}
+
+#game-grid > button:disabled {
+  background-color: #eee; /* Style for disabled buttons */
+  cursor: not-allowed;
+}
+
+#game-header {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+#turn-indicator {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+#new-game-button {
+  margin: 20px 0;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+#new-game-button:hover {
+  background-color: #ddd;
+}
